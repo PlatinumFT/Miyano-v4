@@ -1,4 +1,4 @@
-let discord = require('discord.js');
+let Discord = require('discord.js');
 
 exports.run = async (client, message, args) => {
     let query = client.db;
