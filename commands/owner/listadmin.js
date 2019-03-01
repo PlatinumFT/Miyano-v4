@@ -5,14 +5,14 @@ exports.run = async (client, message, args) => {
 
     let res = await query(`select * from admins`);
 
-    let _admins = res.length;
-        _string='';
+    let _admins = res.length,
+        _string='',
         _user;
 
     if (_admins == 0) _string = "There are no Admins. Assign one!"
     for (i = 0; i < _admins; i++) {
         _user = client.users.get(_admins[i]);
-        _string+=`${user.username}#${user.discriminator}`
+        _string+=`${_user.username}#${_user.discriminator}`
     }
 
     let _embed = new Discord.RichEmbed()
