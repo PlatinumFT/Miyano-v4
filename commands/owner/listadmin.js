@@ -3,7 +3,7 @@ let discord = require('discord.js');
 exports.run = async (client, message, args) => {
     let query = client.db;
 
-    let res = await query(`select * from admins'`);
+    let res = await query(`select * from admins`);
 
     let _admins = res.length,
         _user;
