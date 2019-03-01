@@ -11,7 +11,7 @@ exports.run = async (client, message, args) => {
 
     if (_admins == 0) _string = "There are no Admins. Assign one!"
     for (i = 0; i < _admins; i++) {
-        _user = client.users.get(_admins[i].user_id);
+        _user = client.users.get(res[i].user_id);
         if(!_user) return;
         _string+=`${_user.username}#${_user.discriminator}`
     }
