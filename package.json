@@ -1,0 +1,25 @@
+{
+  "name": "miyano-v3",
+  "version": "1.0.0",
+  "description": "the new miyano",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PlatinumFT/Miyano-V3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PlatinumFT/Miyano-V3/issues"
+  },
+  "homepage": "https://github.com/PlatinumFT/Miyano-V3#readme",
+  "dependencies": {
+    "colors": "^1.3.2",
+    "discord.js": "^11.4.2",
+    "moment": "^2.24.0",
+    "pg": "^7.5.0"
+  }
+}
