@@ -2,6 +2,7 @@ let discord = require('discord.js');
 
 exports.run = async (client, message, args) => {
     let query = client.db;
+    if(!args[0]) return;
 
     let res = await query(`select * from admins where user_id = '${args[0]}'`);
     if(!res[0]) return message.channel.send(`That user is not an admin!`);
